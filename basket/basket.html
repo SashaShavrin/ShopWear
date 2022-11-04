@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <meta name="author" content="Alexander Shavrin">
+  <link type="image/png" sizes="16x16" rel="icon" href="../img/favicon.ico">
+  <title>ShopWear/socks</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../tshirt/thirt style.css">
+</head>
+
+<body>
+  <header id="header" class="header">
+    <div class="hamburger-menu">
+      <input id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle">
+        <span></span>
+      </label>
+      <ul class="menu__box">
+        <li><a class="menu__item" href="../tshirt/tshirt.html">- T-Shirt -</a></li>
+        <li><a class="menu__item" href="../socks/socks.html">- Socks -</a></li>
+        <li><a class="menu__item" href="../boots/boots.html">- Boots -</a></li>
+      </ul>
+    </div>
+    <div class="wrapper">
+      <div class="container">
+
+        <div class="name"><a class="name-logo" href="../index.html">Shop Wear</a></div>
+        <div></div>
+        <ul class="menu">
+          <li class="menu-item" class="tshirt"><a class="menu-item-link" href="../tshirt/tshirt.html">- T-Shirt -</a></li>
+          <li class="menu-item" class="socks"><a class="menu-item-link" href="../socks/socks.html">- Socks -</a></li>
+          <li class="menu-item" class="boots"><a class="menu-item-link" href="../boots/boots.html">- Boots -</a></li>
+        </ul>
+        <a class="menu-basket" href="./basket.html">
+          <div id="basket" class="basket">
+            <div id="generalCount" class="basket-count">0</div>
+          </div>
+        </a>
+      </div>
+      <hr class="line">
+      <div class="price">
+        <div class="price-item">Total price:</div>
+        <div id="generalPrice" class="price-item">0</div>
+        <div class="price-item">USD</div>
+      </div>
+      <hr class="line">
+    </div>
+  </header>
+
+  <div class="wrapper">
+    <p class=" main-tshirt basket-text">
+      OOPS!!!
+    </p>
+    <p class=" basket-text">
+      this section is still in development
+    </p>
+    <div class="div-img">
+      <img class="div-img__inner" src="../img/smile.png" alt="">
+    </div>
+  
+    <style>
+      .basket-text {
+        font-size: 20px;
+        font-weight: 200;
+        text-align: center;
+       padding-top:15px;
+       margin-bottom:15px
+      }
+      .div-img {
+       text-align: center;
+       margin-top: 25px;
+      }
+      .div-img__inner {
+       width: 20%;
+      }
+    </style>
+    
+
+   
+
+
+
+ 
+  </div>
+  <script src="../js/header-scroll.js"></script>
+  <script src="../js/countProducts.js"></script>
+  <script src="../js/carusel.js"></script>
+  <script src="../js/basket.js"></script>
+  <script>
+    let price = localStorage.getItem('sum');
+    let count = localStorage.getItem('count');
+    let generalPrice = document.getElementById('generalPrice');
+    let generalCount = document.getElementById('generalCount');
+    generalPrice.innerHTML = price;
+    generalCount.innerHTML = count;
+  </script>
+
+</body>
+
+</html>
