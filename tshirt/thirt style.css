@@ -149,23 +149,12 @@
 }
 
 .point-front, .point-back {
-  width: 33%;
-  margin: 10px;
-  height: 3px;
-  background: rgba(0, 0, 0, 0.445);
+  width: 35px;
+  height: 35px;
   border: none;
-  margin: 15px 25px;
+  margin: 0 13px;
 }
 
 .point-front:hover, .point-back:hover {
-  background: rgb(46, 11, 11);
+  opacity: 0.7;
 }
-
-.span-btn {
-  padding: 30px;
-}
-
-@media (max-width: 992px) {
-  .span-btn {
-    padding: 50px;
-  }
