@@ -1,6 +1,6 @@
-  let generalPrice = document.getElementById('generalPrice');
+ function getProductsInBasket() {
+   let generalPrice = document.getElementById('generalPrice');
   generalPrice.innerHTML = '0';
-function getProductsInBasket() {
   let btns = document.body.querySelectorAll('.count');
   let generalCount = document.getElementById('generalCount');
   for (var i = 0; i < btns.length; i++) {
