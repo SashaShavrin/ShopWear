@@ -1,6 +1,7 @@
+  let generalPrice = document.getElementById('generalPrice');
+  generalPrice.innerHTML = '0';
 function getProductsInBasket() {
   let btns = document.body.querySelectorAll('.count');
-  let generalPrice = document.getElementById('generalPrice');
   let generalCount = document.getElementById('generalCount');
   for (var i = 0; i < btns.length; i++) {
     btns[i] = 'count' + i;
@@ -22,7 +23,6 @@ function getProductsInBasket() {
       totalPriceItem.innerHTML = counter.innerHTML * priceProductParent.innerHTML;
 
       function sum() {
-        generalPrice.innerHTML = '0';
         let arr = document.querySelectorAll('.count__total-price');
         let result = 0;
         for (let key in arr) {
@@ -49,7 +49,6 @@ function getProductsInBasket() {
       totalPriceItem.innerHTML = counter.innerHTML * priceProductParent.innerHTML;
 
       function sum() {
-        generalPrice.innerHTML = '0';
         let arr = document.querySelectorAll('.count__total-price');
         let result = 0;
         for (let key in arr) {
