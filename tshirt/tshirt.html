@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <meta name="author" content="Alexander Shavrin">
+  <link type="image/png" sizes="16x16" rel="icon" href="../img/favicon.ico">
+  <title>ShopWear/t-shirts</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="./thirt style.css">
+</head>
+
+<body>
+  <header id="header" class="header">
+    <div class="hamburger-menu">
+      <input id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle">
+        <span></span>
+      </label>
+
+      <ul class="menu__box">
+        <li><a class="menu__item" href="./tshirt.html">- T-Shirt -</a></li>
+        <li><a class="menu__item" href="../socks/socks.html">- Socks -</a></li>
+        <li><a class="menu__item" href="../boots/boots.html">- Boots -</a></li>
+      </ul>
+    </div>
+    <div class="wrapper">
+      <div class="container">
+
+        <div class="name"><a class="name-logo" href="../index.html">Shop Wear</a></div>
+        <div></div>
+        <ul class="menu">
+          <li class="menu-item" class="tshirt"><a class="menu-item-link" href="./tshirt.html">- T-Shirt -</a></li>
+          <li class="menu-item" class="socks"><a class="menu-item-link" href="../socks/socks.html">- Socks -</a></li>
+          <li class="menu-item" class="boots"><a class="menu-item-link" href="../boots/boots.html">- Boots -</a></li>
+        </ul>
+        <a class="menu-basket" href="../basket/basket.html">
+          <div id="basket" class="basket">
+            <div id="generalCount" class="basket-count">0</div>
+          </div>
+        </a>
+      </div>
+      <hr class="line">
+      <div class="price">
+        <div class="price-item">Total price:</div>
+        <div id="generalPrice" class="price-item">0</div>
+        <div class="price-item">USD</div>
+      </div>
+      <hr class="line">
+    </div>
+  </header>
+
+  <div class="wrapper">
+    <main class="main-tshirt">
+      <div class="tshirt-header">
+        <div class="tshirt-header__info">
+          <p class="tshirt-header__title">T-shirt</p>
+          <p class="tshirt-header__text">A T-shirt (also spelled tee shirt), or tee, is a style of fabric shirt named after the T shape of its body and sleeves. Traditionally, it has short sleeves and a round neckline, known as a crew neck, which lacks a collar. T-shirts are generally made of a stretchy, light, and inexpensive fabric and are easy to clean. The T-shirt evolved from undergarments used in the 19th century and, in the mid-20th century, transitioned from undergarment to general-use casual clothing.</p>
+        </div>
+      </div>
+
+      <div id="products" class="tshirt-items">
+
+        <div class="tshirt-item">
+          <img src="../img/tshirt-three-front.jpg" alt="tshirt" class="tshirt-item__img">
+          <img src="../img/tshirt-three-back.jpg" alt="tshirt" class="tshirt-item__img-back">
+          <div id="points" class="points">
+            <button class="point-front" data-carusel="front"></button>
+            <button class="point-back" data-carusel="back"></button>
+          </div>
+          <p class="tshirt-item__info">Tshirt color: <b>RED</b></p>
+          <div id="red" class="tshirt-item__info size">Size: <b><span class="tshirt-item__info-span span"></span></b>
+            <ul class="tshirt-item__info-sizes">
+              <li data-test="red" class="tshirt-item__info-size">XS</li>
+              <li data-test="red" class="tshirt-item__info-size">S</li>
+              <li data-test="red" class="tshirt-item__info-size">M</li>
+              <li data-test="red" class="tshirt-item__info-size">L</li>
+              <li data-test="red" class="tshirt-item__info-size">XL</li>
+            </ul>
+            <hr class="line">
+            <div class="count">
+              <button class="count-btn">-</button>
+              <div id="counter" class="number">0</div>
+              <button class="count-btn">+</button>
+            </div>
+            <p class="tshirt-item__info">Price: <b class="price-product">150</b><b> USD</b></p>
+          </div>
+        </div>
+
+        <div class="tshirt-item">
+          <img src="../img/tshirt-two-front.jpg" alt="tshirt" class="tshirt-item__img">
+          <img src="../img/tshirt-two-back.jpg" alt="tshirt" class="tshirt-item__img-back">
+          <div id="points" class="points">
+            <button class="point-front" data-carusel="front"></button>
+            <button class="point-back" data-carusel="back"></button>
+          </div>
+          <p class="tshirt-item__info">Tshirt color: <b>BlACK</b></p>
+          <div id="white" class="tshirt-item__info size">Size: <b><span class="tshirt-item__info-span span"></span></b>
+            <ul class="tshirt-item__info-sizes">
+              <li data-test="white" class="tshirt-item__info-size">XS</li>
+              <li data-test="white" class="tshirt-item__info-size">S</li>
+              <li data-test="white" class="tshirt-item__info-size">M</li>
+              <li data-test="white" class="tshirt-item__info-size">L</li>
+              <li data-test="white" class="tshirt-item__info-size">XL</li>
+            </ul>
+            <hr class="line">
+            <div class="count">
+              <button class="count-btn">-</button>
+              <div id="counter" class="number">0</div>
+              <button class="count-btn">+</button>
+            </div>
+            <p class="tshirt-item__info">Price: <b class="price-product">100</b><b> USD</b></p>
+          </div>
+        </div>
+
+        <div class="tshirt-item">
+          <img src="../img/tshirt-one-front.jpg" alt="tshirt" class="tshirt-item__img">
+          <img src="../img/tshirt-one-back.jpg" alt="tshirt" class="tshirt-item__img-back">
+          <div id="points" class="points">
+            <button class="point-front" data-carusel="front"></button>
+            <button class="point-back" data-carusel="back"></button>
+          </div>
+          <p class="tshirt-item__info">Tshirt color: <b>WHITE</b></p>
+          <div id="black" class="tshirt-item__info size">Size: <b><span class="tshirt-item__info-span span"></span></b>
+            <ul class="tshirt-item__info-sizes">
+              <li data-test="black" class="tshirt-item__info-size">XS</li>
+              <li data-test="black" class="tshirt-item__info-size">S</li>
+              <li data-test="black" class="tshirt-item__info-size">M</li>
+              <li data-test="black" class="tshirt-item__info-size">L</li>
+              <li data-test="black" class="tshirt-item__info-size">XL</li>
+            </ul>
+            <hr class="line">
+            <div class="count">
+              <button class="count-btn">-</button>
+              <div id="counter" class="number">0</div>
+              <button class="count-btn">+</button>
+            </div>
+            <p class="tshirt-item__info">Price: <b class="price-product">100</b><b> USD</b></p>
+          </div>
+        </div>
+
+        <div class="tshirt-item">
+          <img src="../img/tshirt-four-front.jpg" alt="tshirt" class="tshirt-item__img">
+          <img src="../img/tshirt-four-back.jpg" alt="tshirt" class="tshirt-item__img-back">
+          <div id="points" class="points">
+            <button class="point-front" data-carusel="front"></button>
+            <button class="point-back" data-carusel="back"></button>
+          </div>
+          <p class="tshirt-item__info">Tshirt color: <b>YELLOW</b></p>
+          <div id="yellow" class="tshirt-item__info size">Size: <b><span class="tshirt-item__info-span span"></span></b>
+            <ul class="tshirt-item__info-sizes">
+              <li data-test="yellow" class="tshirt-item__info-size">XS</li>
+              <li data-test="yellow" class="tshirt-item__info-size">S</li>
+              <li data-test="yellow" class="tshirt-item__info-size">M</li>
+              <li data-test="yellow" class="tshirt-item__info-size">L</li>
+              <li data-test="yellow" class="tshirt-item__info-size">XL</li>
+            </ul>
+            <hr class="line">
+            <div class="count">
+              <button class="count-btn">-</button>
+              <div id="counter" class="number">0</div>
+              <button class="count-btn">+</button>
+            </div>
+            <p class="tshirt-item__info">Price: <b class="price-product">125</b><b> USD</b></p>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  </main>
+  </div>
+  <script src="../js/header-scroll.js"></script>
+  <script src="../js/countProducts.js"></script>
+  <script src="../js/carusel.js"></script>
+  <script src="../js/basket.js"></script>
+
+  <script>
+    let price = localStorage.getItem('sum');
+    let count = localStorage.getItem('count');
+    generalPrice.innerHTML = price;
+    generalCount.innerHTML = count;
+  </script>
+
+</body>
+
+</html>
