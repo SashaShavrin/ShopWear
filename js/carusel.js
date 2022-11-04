@@ -1,6 +1,5 @@
 let points = document.querySelectorAll('points');
-
-products.addEventListener('mousover',
+products.addEventListener('mouseover',
   event => {
     let elem = event.target;
     let elemParent = elem.parentNode.parentNode;
