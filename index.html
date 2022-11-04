@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <meta name="author" content="Alexander Shavrin">
+  <link type="image/png" sizes="16x16" rel="icon" href="img/favicon.ico">
+  <title>Shop</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <header id="header" class="header">
+    <div class="hamburger-menu">
+      <input id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle">
+        <span></span>
+      </label>
+
+      <ul class="menu__box">
+        <li><a class="menu__item" href="./tshirt/tshirt.html">- T-Shirt -</a></li>
+        <li><a class="menu__item" href="./socks/socks.html">- Socks -</a></li>
+        <li><a class="menu__item" href="./boots/boots.html">- Boots -</a></li>
+      </ul>
+    </div>
+    <div class="wrapper">
+      <div class="container">
+
+        <div class="name"><a class="name-logo" href="./index.html">Shop Wear</a></div>
+        <div></div>
+        <ul class="menu">
+          <li class="menu-item" class="tshirt"><a class="menu-item-link" href="./tshirt/tshirt.html">- T-Shirt -</a></li>
+          <li class="menu-item" class="socks"><a class="menu-item-link" href="./socks/socks.html">- Socks -</a></li>
+          <li class="menu-item" class="boots"><a class="menu-item-link" href="./boots/boots.html">- Boots -</a></li>
+        </ul>
+        <a class="menu-basket" href="./basket/basket.html">
+          <div id="basket" class="basket">
+            <div id="generalCount" class="basket-count">0</div>
+          </div>
+        </a>
+      </div>
+      <hr class="line">
+      <div class="price">
+        <div class="price-item">Total price:</div>
+        <div id="generalPrice" class="price-item">0</div>
+        <div class="price-item">USD</div>
+      </div>
+      <hr class="line">
+    </div>
+  </header>
+
+  <div class="wrapper">
+    <main class="main">
+      <div class="main-item">
+        <a class="main-item__img-link" href="./tshirt/tshirt.html" "><div class="main-item__zoom-tshirt "></div></a>
+    <div class="main-item__name "><a class="main-item__name-link " href="./tshirt/tshirt.html "">T-shirt</a>
+      </div>
+      <hr class="line">
+      <p class="main-item__info">
+        A T-shirt (also spelled tee shirt), or tee, is a style of fabric shirt named after the T shape of its body and sleeves. Traditionally, it has short sleeves and a round neckline, known as a crew neck, which lacks a collar. T-shirts are generally made of a stretchy, light, and inexpensive fabric and are easy to clean. The T-shirt evolved from undergarments used in the 19th century and, in the mid-20th century, transitioned from undergarment to general-use casual clothing.
+      </p>
+  </div>
+
+  <div class="main-item">
+    <a class="main-item__img-link" href="./socks/socks.html">
+      <div class="main-item__zoom-socks"></div>
+    </a>
+    <div class="main-item__name"><a class="main-item__name-link" href="./socks/socks.html">Socks</a></div>
+    <hr class="line">
+    <p class="main-item__info">
+      Socks are a type of underwear, a short stocking that does not reach the knee. A paired fabric garment designed to be worn on a person's feet. Some types of shoes are usually worn over socks. In ancient times, socks were made from the skin or tangled hair of animals. At the end of the XVI century, machine knitting socks appeared. Since the beginning of the XIX century, machine knitting has become the predominant method in the manufacture of socks.
+    </p>
+  </div>
+
+  <div class="main-item">
+    <a class="main-item__img-link" href="./boots/boots.html">
+      <div class="main-item__zoom-boots"></div>
+    </a>
+    <div class="main-item__name"><a class="main-item__name-link" href="./boots/boots.html">Boots</a></div>
+    <hr class="line">
+    <p class="main-item__info">
+      Boots — shoes that protect the ankle joint, unlike half-boots, have a foot fixation system in the form of laces or belts, more often men's than women's. Classic shoes are made of leather and tied with laces. However, variations in shape, material and method of tying are possible. Modern shoes often use a zipper instead of laces (or together with them). In addition, some shoes (for example, Chelsea) do not have lacing at all, but instead use two rubber inserts on the sides.
+      <br>
+      <br> Each season has its own shoes. Usually boots are used in winter (to protect from snow), spring and autumn (to protect from dirt and deep puddles). There are also special boots, such as ski boots or tactical boots.
+    </p>
+  </div>
+  </main>
+  </div>
+
+  <script src="./js/header-scroll.js"></script>
+  <script src="./js/countProducts.js"></script>
+  <script>
+    let price = localStorage.getItem('sum');
+    let count = localStorage.getItem('count');
+    let generalPrice = document.getElementById('generalPrice');
+    let generalCount = document.getElementById('generalCount');
+    generalPrice.innerHTML = price;
+    generalCount.innerHTML = count;
+  </script>
+
+</body>
+
+</html>
