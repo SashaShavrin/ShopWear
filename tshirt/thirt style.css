@@ -162,5 +162,10 @@
 }
 
 .span-btn {
-  padding: 50px;
+  padding: 30px;
 }
+
+@media (max-width: 992px) {
+  .span-btn {
+    padding: 50px;
+  }
