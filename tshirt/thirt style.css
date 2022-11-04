@@ -133,14 +133,13 @@
 }
 
 .point-front, .point-back {
-  width: 10px;
-  margin: 10px;
-  height: 12px;
+  width: 100px;
+  margin: 15px 25px;
+  height: 4px;
   background: rgba(0, 0, 0, 0.445);
-  border-radius: 100%;
   border: none;
 }
 
 .point-front:hover, .point-back:hover {
   background: rgb(46, 11, 11);
-}/*# sourceMappingURL=thirt style.css.map */
+}
