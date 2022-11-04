@@ -1,6 +1,7 @@
 function getProductsInBasket() {
   let btns = document.body.querySelectorAll('.count');
   let generalPrice = document.getElementById('generalPrice');
+  generalPrice.innerHTML = '0';
   let generalCount = document.getElementById('generalCount');
   for (var i = 0; i < btns.length; i++) {
     btns[i] = 'count' + i;
