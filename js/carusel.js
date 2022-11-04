@@ -1,6 +1,6 @@
 let points = document.querySelectorAll('points');
 
-products.addEventListener('click',
+products.addEventListener('onemousover',
   event => {
     let elem = event.target;
     let elemParent = elem.parentNode.parentNode;
