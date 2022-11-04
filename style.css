@@ -260,6 +260,7 @@ li {
   justify-content: end;
   margin: 10px auto;
   align-items: baseline;
+  font-size: 20px;
 }
 @media (max-width: 576px) {
   .price {
