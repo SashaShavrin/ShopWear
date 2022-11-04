@@ -144,16 +144,19 @@
 .points {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: white;
-  margin-top: -61px;
+  margin-top: -70px;
+  height: 52px;
   margin-bottom: 46px;
 }
 
 .point-front, .point-back {
-  width: 35px;
-  height: 35px;
-  border: none;
-  margin: 0 13px;
+    width: 42px;
+    height: 63px;
+    border: none;
+    padding: 18px 6px;
+    margin: 0 16px;
 }
 
 .point-front:hover, .point-back:hover {
